@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Garlic
+comment1.params=
+comment1.target=Garlic()
+comment2.params=speed\ rotation
+comment2.target=Garlic(int,\ int)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ move()
+comment5.params=
+comment5.target=void\ checkDraculaHit()
+numComments=6

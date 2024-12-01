@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BreakWorldText
+comment1.params=message
+comment1.target=BreakWorldText(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ showRightArrow()
+numComments=4

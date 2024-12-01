@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Box
+comment1.params=status
+comment1.target=void\ setContainsBlock(boolean)
+comment2.params=
+comment2.target=boolean\ containsBlock()
+comment3.params=
+comment3.target=void\ act()
+numComments=4

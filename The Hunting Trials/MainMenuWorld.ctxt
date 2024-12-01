@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MainMenuWorld
+comment1.params=previousWorld
+comment1.target=MainMenuWorld(greenfoot.World)
+comment2.params=
+comment2.target=greenfoot.World\ getPreviousWorld()
+comment3.params=
+comment3.target=void\ prepare()
+numComments=4

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ContinueButton
+comment1.params=mainMenuWorld
+comment1.target=ContinueButton(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+numComments=3
