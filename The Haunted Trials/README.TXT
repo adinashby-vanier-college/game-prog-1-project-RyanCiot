@@ -1,7 +1,12 @@
 ------------------------------------------------------------------------
-Hello! This is my team's first game, it was a project given by our game
-programming teacher. The purpose of this project/game, which is called 
-The Haunted trials, is to defeat Dracula by going through all the levels.
-The player will be moving with the aswd keys and arrow keys, will be 
-avoiding all the ghosts, and will eventually defeat Dracula.
+This is the project README file. Here, you should describe your project.
+Tell the reader (someone who does not know anything about this project)
+all they need to know. The comments should usually include at least:
 ------------------------------------------------------------------------
+
+PROJECT TITLE:
+PURPOSE OF PROJECT:
+VERSION or DATE:
+HOW TO START THIS PROJECT:
+AUTHORS:
+USER INSTRUCTIONS:
