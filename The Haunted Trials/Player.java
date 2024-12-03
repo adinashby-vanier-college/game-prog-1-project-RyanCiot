@@ -134,7 +134,6 @@ public class Player extends Actor
     {
         Garlic blast = new Garlic(10, getRotation());
         getWorld().addObject(blast, getX(), getY()); 
-        SoundManager.playshootGarlic(); // Play the shooting sound
         shootCooldown = 10;  // Cooldown for firing bullets
     }
     if (shootCooldown > 0) {
