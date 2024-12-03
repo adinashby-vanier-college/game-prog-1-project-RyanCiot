@@ -145,7 +145,6 @@ public class Player extends Actor
         if (health > 0) {
         health -= damage;
         playerHealthBar.updateHealth(health);
-        SoundManager.playshootGarlic();
         if (health <= 0) {
             getWorld().removeObject(this);  // Remove player from world
             Greenfoot.setWorld(new GameOver()); // Transition to GameOver world

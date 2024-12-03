@@ -1,21 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Level1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Level1 extends World
 {
-    /**
-     * Constructor for objects of class Level1.
-     */
-    
     private int keysCollected = 0; // Tracks total keys collected
     private int setsSpawned = 0;   // Tracks how many sets of keys have been spawned
     private int keysInCurrentSet = 0; // Tracks keys collected in the current set
-     
+
     public Level1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -23,10 +13,6 @@ public class Level1 extends World
         prepare();
     }
     
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
     private void prepare()
     {
         Player player = new Player();
@@ -75,40 +61,40 @@ public class Level1 extends World
         ghost.setLocation(465,223);
     }
 
-     public void act() {
-          checkKeyCollection();
+    public void act() {
+        checkKeyCollection();
     }
     
     private void checkKeyCollection()
     {
-        if (keysInCurrentSet == 8) {
+        if (keysInCurrentSet == 6) {  // 6 keys collected in the current set
             keysInCurrentSet = 0;
 
-            if (setsSpawned < 3) {
-                spawnKeys();
-            } else if (keysCollected == 24) {
-                Greenfoot.setWorld(new Level2()); // Transition to Level2
+            if (setsSpawned < 2) {
+                spawnKeys();  // Spawn next set of keys
+            } else {
+                Greenfoot.setWorld(new Level2());  // Transition to next level after 3 sets
             }
         }
     }
 
-    /**
-     * Increments the keys collected count.
-     */
     public void collectKey()
     {
         keysCollected++;
         keysInCurrentSet++;
     }
+
     private void spawnKeys()
     {
-        for (int i = 0; i < 8; i++) {
-            Key key = new Key(); // Assumes you have a Key class
+        // Spawn 8 keys in random positions for the current set
+        for (int i = 0; i < 6; i++) {
+            Key key = new Key(); // Assuming you have a Key class
             int x = Greenfoot.getRandomNumber(getWidth());
             int y = Greenfoot.getRandomNumber(getHeight());
+
+            // Ensure the key is placed within the visible area
             addObject(key, x, y);
         }
-        setsSpawned++;
+        setsSpawned++;  // Increment the number of sets spawned
     }
-
 }
